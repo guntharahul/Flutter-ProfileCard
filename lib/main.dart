@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
           appBar: AppBar(
             title: new Text("Profile Card"),
+            backgroundColor: Colors.teal,
           ),
           backgroundColor: Colors.teal,
           body: SafeArea(
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
                 Text(
                   'Rahul',
                   style: TextStyle(
-                      color: Colors.black,
+                      color: Colors.white,
                       fontSize: 60.0,
                       fontWeight: FontWeight.bold,
                       fontFamily: 'Acme'),
@@ -33,11 +34,61 @@ class MyApp extends StatelessWidget {
                 Text(
                   'I am an android developer',
                   style: TextStyle(
-                      color: Colors.red.shade300,
+                      color: Colors.white70,
                       fontFamily: 'Acme',
                       fontSize: 30.0,
                       fontWeight: FontWeight.bold,
-                      letterSpacing: 5.0),
+                      letterSpacing: 2.0),
+                ),
+                Container(
+                  padding: EdgeInsets.all(15.0),
+                  color: Colors.white,
+                  margin:
+                      EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                  child: Row(
+                    children: <Widget>[
+                      Icon(
+                        Icons.phone,
+                        size: 20.0,
+                        color: Colors.black,
+                      ),
+                      SizedBox(
+                        width: 20.0,
+                      ),
+                      Text(
+                        '9666522688',
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontFamily: 'Acme',
+                            fontSize: 20.0),
+                      )
+                    ],
+                  ),
+                ),
+                Container(
+                  padding: EdgeInsets.all(15.0),
+                  color: Colors.white,
+                  margin:
+                      EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                  child: Row(
+                    children: <Widget>[
+                      Icon(
+                        Icons.email,
+                        size: 20.0,
+                        color: Colors.black,
+                      ),
+                      SizedBox(
+                        width: 20.0,
+                      ),
+                      Text(
+                        'guntha.rahul9@gmail.com',
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontFamily: 'Acme',
+                            fontSize: 20.0),
+                      )
+                    ],
+                  ),
                 )
               ],
             ),
